@@ -1,0 +1,24 @@
+.animated-details
+    padding-block: 1rem
+    border: 1px solid #C5C5C5
+    border-width: 1px 0 0 0
+    height: 1.50rem
+    transition: height 0.5s ease
+    overflow: hidden
+
+    &:last-of-type
+        border-bottom-width: 1px
+
+    &__summary
+        list-style: none
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__arrow
+        transition: transform 0.3s ease
+        transform: rotate(0deg)
+
+    &[open] &__arrow
+        transform: rotate(90deg)
